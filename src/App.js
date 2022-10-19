@@ -69,6 +69,7 @@ function App() {
         </div>
       </form>
       <div className="container done">
+        <h2>Done</h2>
         {
           toDos && toDos.map((obj) => {
             if (obj.statusDone && !obj.statusRemove)
@@ -96,6 +97,7 @@ function App() {
       </div>
 
       <div className="container onGoing">
+        <h2>on Going</h2>
         {
           toDos && toDos.map((obj) => {
             if (!obj.statusDone && !obj.statusDrop) {
